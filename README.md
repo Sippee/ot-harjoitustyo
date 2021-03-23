@@ -2,4 +2,4 @@
 Perus tekstiä  
 *Kursivoitua tekstiä*  
 **Lihavoitua tekstiä**  
-_Lihavoitua **kursivoitua** tekstiä_
+_**Lihavoitua** kursivoitua tekstiä_
