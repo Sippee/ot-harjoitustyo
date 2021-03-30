@@ -31,7 +31,7 @@ jonka jälkeen hän voi luoda tunnuksia opiskelijoille,
 + Opettajat, joko voivat luoda tehtäviä. 
 + Opiskelijat näkevät tehtäväryhmiä, voivat valita niistä jonkin ja alkaa tekemään tehtäviä.
 
-##Jatkokehitysideoita
+## Jatkokehitysideoita
 
 + Saada pisteitä tehtävistä
 + Merkitä tehtäviä tekemättömiksi
