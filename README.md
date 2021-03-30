@@ -7,4 +7,5 @@
 [maksukortti](laskarit/viikko2/maksukortti)  
 [unicafe](laskarit/viikko2/unicafe)  
 [Viikon2-tehtavan-kuva](laskarit/viikko2/viikko2_tehtavan_kattavuus.PNG)  
-[Vaatimusmäärittely](harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](harjoitustyo/dokumentaatio/vaatimusmaarittely.md)  
+[Tuntikirjanpito](harjoitustyo/dokumentaatio/tuntikirjanpito.md)
