@@ -18,7 +18,7 @@ josta pääsee erilaisiin tehtäviin.
 Opettajan kirjautuessa saa valita meneekö tehtävä näkymään vai tehtävien luomis näkymään.
 Käyttäjän luominen, joko tapahtuu erikseen opettajan toimesta tai sitten sovelluksessa.
 
-##Perusversion tarjoama toiminnallisuus
+## Perusversion tarjoama toiminnallisuus
 
 ### Tunnuksen luominen
 
