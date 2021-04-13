@@ -9,7 +9,7 @@
 [Viikon2-tehtavan-kuva](laskarit/viikko2/viikko2_tehtavan_kattavuus.PNG)  
 [Vaatimusmäärittely](harjoitustyo/dokumentaatio/vaatimusmaarittely.md)  
 [Tuntikirjanpito](harjoitustyo/dokumentaatio/tuntikirjanpito.md)  
-### Viikko 2
+### Viikko 3
 [Tehtävä 1](laskarit/viikko3/viikko3_tehtava1.jpg)  
 [Tehtävä 2](laskarit/viikko3/viikko3_tehtava2.jpg)  
 [Tehtävä 3](laskarit/viikko3/viikko3_tehtava3.png)  
