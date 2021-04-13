@@ -2,4 +2,5 @@
 Päivä | Aika(tunti) | Mitä tein
 ------|-------------|----------
 30.3  | 1           | Tein harjoitustyötä varten tuntikirjanpito.md ja vaatimusmäärittelyn  
-Yht.  | 1           |
+13.4  | 2.5         | Aloitin tekemään luokkia harjoitustyötä varten, mutta en päässyt pitkälle ennen kuin tuli este vastaan, enkä ehtinyt tehdä testejä... Esteenä oli tiedon tallennus, yritin käyttää pickleä  
+Yht.  | 3.5           |
