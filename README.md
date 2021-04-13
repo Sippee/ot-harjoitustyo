@@ -10,7 +10,7 @@
 [Vaatimusmäärittely](harjoitustyo/dokumentaatio/vaatimusmaarittely.md)  
 [Tuntikirjanpito](harjoitustyo/dokumentaatio/tuntikirjanpito.md)  
 ### Viikko 2
-[Tehtävä 1](laskarit/viikko3/viikko3_tehtava1.jpg)
-[Tehtävä 2](laskarit/viikko3/viikko3_tehtava2.jpg)
-[Tehtävä 3](laskarit/viikko3/viikko3_tehtava3.png)
-[Tehtävä 4](laskarit/viikko3/viikko3_tehtava4.png)
+[Tehtävä 1](laskarit/viikko3/viikko3_tehtava1.jpg)  
+[Tehtävä 2](laskarit/viikko3/viikko3_tehtava2.jpg)  
+[Tehtävä 3](laskarit/viikko3/viikko3_tehtava3.png)  
+[Tehtävä 4](laskarit/viikko3/viikko3_tehtava4.png)  
