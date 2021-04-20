@@ -1,5 +1,5 @@
-from user import User
-from userdata import UserData
+from entities.user import User
+from repositories.userdata import UserData
 
 def main():
     user_data = UserData("src/data/data.db")

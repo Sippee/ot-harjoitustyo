@@ -1,6 +1,6 @@
 import unittest
-from userdata import UserData
-from user import User
+from repositories.userdata import UserData
+from entities.user import User
 
 class TestUserData(unittest.TestCase):
     def setUp(self):
