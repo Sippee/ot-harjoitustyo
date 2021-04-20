@@ -2,3 +2,5 @@
 .pytest_cache
 htmlcov
 __pycache__
+data.txt
+userdata
