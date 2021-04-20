@@ -23,7 +23,7 @@ Käyttäjän luominen, joko tapahtuu erikseen opettajan toimesta tai sitten sove
 ### Tunnuksen luominen
 
 + Opettaja rekisteröityy itse tai hänelle teetetään tunnuksen, 
-jonka jälkeen hän voi luoda tunnuksia opiskelijoille, TEHTY OSITTAIN
+jonka jälkeen hän voi luoda tunnuksia opiskelijoille, TEHTY
 + tai opiskelijat ja opettajat luovat itselleen tunnuksia.
 
 ### Kirjautumisen jälkeen
