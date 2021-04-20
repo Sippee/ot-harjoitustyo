@@ -2,7 +2,7 @@
 
 ## Rakenne
 Ohjelmalla on vasta kaksitasoinen kerrosarkkitehtuuri, sillä tulee olemaan kolmi.  
-![Ohjelman nykyinen arkkitehtuuri](https://github.com/Sippee/ot-harjoitustyo/dokumentaatio/kuvat/arkkitehtuurikuva.png?raw=true)  
+![Ohjelman nykyinen arkkitehtuuri](https://github.com/Sippee/ot-harjoitustyo/blob/main/dokumentaatio/kuvat/arkkitehtuurikuva.png?raw=true)  
 Repositories sisältää tietojen tallennuksesta vastaavan koodin, ja entities sisältää luokista vastaavan koodin.  
 ## Sovelluslogiikka
 Sovelluksen nykyisen logiikan muodostaa vain luokka User, mutta tulee sisältämään luokan tehtävät.  
