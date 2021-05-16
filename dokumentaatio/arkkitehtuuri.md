@@ -2,7 +2,7 @@
 
 ## Rakenne
 Ohjelmalla on kolmitasoinen kerrosarkkitehtuuri.  
-![Ohjelman nykyinen arkkitehtuuri](https://github.com/Sippee/ot-harjoitustyo/blob/main/dokumentaatio/kuvat/arkkitehtuurikuva.png?raw=true)  
+![Ohjelman nykyinen arkkitehtuuri](https://github.com/Sippee/ot-harjoitustyo/blob/main/dokumentaatio/kuvat/arkkitehtuurikuva1.png?raw=true)  
 Repositories sisältää tietojen tallennuksesta vastaavan koodin, ja entities sisältää luokista vastaavan koodin. Ui sisältää käyttöliittymän ja services sovelluslogiikan.
 ## Käyttöliittymä
 Käyttöliittymä koostuu kolmesta eri sivusta, kirjautumis sivusta, uuden käyttäjän luomis sivusta ja tehtävä sivusta.  
