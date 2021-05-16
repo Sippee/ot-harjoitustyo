@@ -18,11 +18,11 @@ Kirjautumisen tai uuden käyttäjän luomisen jälkeen pääsee tehtävä näkym
 ### Tunnuksen luominen ja kirjautuminen
 
 + Käyttäjä voi luoda tunnuksen sovellukselle
-++ Tunnus luodaan menemällä create-sivulle ja kirjoittamalla uusi tunnus ja salasana sinne.
-++ Tunnuksia voi luoda useita kappaleita, kunhan ne ovat eri nimisiä, muuten yrityksestä tulee virhe
+  + Tunnus luodaan menemällä create-sivulle ja kirjoittamalla uusi tunnus ja salasana sinne.
+  + Tunnuksia voi luoda useita kappaleita, kunhan ne ovat eri nimisiä, muuten yrityksestä tulee virhe
 + Käyttäjä voi kirjautua sovellukseen
-++ Kirjautuminen onnistuu ensimmäisellä sivulla kirjoittamalla käyttäjätunnus, salasana ja painamalla Login-painikeeta
-++ Jos tunnusta ei ole olemassa tai salasana on väärin tulee virheilmoitus.
+  + Kirjautuminen onnistuu ensimmäisellä sivulla kirjoittamalla käyttäjätunnus, salasana ja painamalla Login-painikeeta
+  + Jos tunnusta ei ole olemassa tai salasana on väärin tulee virheilmoitus.
 
 ### Kirjautumisen jälkeen
 
