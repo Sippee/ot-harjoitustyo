@@ -8,7 +8,7 @@ Käyttäjä voi tallentaa tehtäviä ja niiden tehtävien vastauksia tulevaisuut
 Sovelluksella on vain yksi normaali käyttäjä rooli.
 
 ## Käyttöliittymä
-
+Sovelluksella on kolme eri näkymää.  
 Kirjautumisnäkymä aukeaa ensimmäisenä. 
 Kirjautumisnäkymästä voi mennä rekisteröitymisnäkymään luomaan tunnuksen.
 Kirjautumisen tai uuden käyttäjän luomisen jälkeen pääsee tehtävä näkymään, ja käyttäjä voi aloittaa lisäämään tehtäviä
