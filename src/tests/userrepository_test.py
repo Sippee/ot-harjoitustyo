@@ -6,8 +6,8 @@ class TestUserData(unittest.TestCase):
     def setUp(self):
         self.user_data = UserRepository("data/data.db")
         self.user_data.deleteall()
-        self.user1 = User("Keijo","keijotin")
-        self.user2 = User("Kasper", "kaspertin")
+        self.user1 = User("Matti","keijotin")
+        self.user2 = User("Keijo", "kaspertin")
         
     def test_create(self):
         self.user_data.create(self.user1)
@@ -17,7 +17,7 @@ class TestUserData(unittest.TestCase):
     def test_findname(self):
         self.user_data.create(self.user1)
         data = self.user_data.findname(self.user1.username)
-        self.assertEqual(data.username, self.user1.username)
+        self.assertEqual(data[0], self.user1.username)
 
     def test_readall(self):
         self.user_data.create(self.user1)
