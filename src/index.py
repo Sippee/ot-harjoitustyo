@@ -1,22 +1,15 @@
-from entities.user import User
-from repositories.userdata import UserData
+from tkinter import Tk
+from ui.ui import UI
 
 def main():
-    user_data = UserData("src/data/data.db")
 
-    print("Creating user")
+    window = Tk()
+    window.title('TeacherHelper')
 
-    username = input("Username: ")
-    password = input("Password: ")
-    user = User(username,password)
+    ui = UI(window)
+    ui.start()
 
-    user_data.create(user)
+    window.mainloop()
 
-    print("User is in register now")
-    print("Here's how register looks like")
-    for i in user_data.readall():
-        print(i)
-
-    user_data.deleteall()
-
-main()
+if __name__ == '__main__':
+        main()

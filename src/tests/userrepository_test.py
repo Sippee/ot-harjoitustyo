@@ -1,10 +1,10 @@
 import unittest
-from repositories.userdata import UserData
+from repositories.user_repository import UserRepository
 from entities.user import User
 
 class TestUserData(unittest.TestCase):
     def setUp(self):
-        self.user_data = UserData("src/data/data.db")
+        self.user_data = UserRepository("data/data.db")
         self.user_data.deleteall()
         self.user1 = User("Keijo","keijotin")
         self.user2 = User("Kasper", "kaspertin")
