@@ -14,11 +14,11 @@ Sovelluksessa voi luoda tunnuksen, kirjautua ja lisätä tehtäviä ja niiden va
 3. Käynnistetään sovelllus "poetry run invoke start"
 
 ## Komennot  
-#Ohjelman suoritus  
+# Ohjelman suoritus  
 poetry run invoke start  
 
-#Testaus  
+# Testaus  
 poetry run invoke test  
 
-#Testikattavuus  
+# Testikattavuus  
 poetry run invoke coverage-report  
