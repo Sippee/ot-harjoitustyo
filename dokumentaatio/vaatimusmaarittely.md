@@ -1,40 +1,38 @@
 # Vaatimusmäärittely
 
 ## Sovelluksen tarkoitus
-Sovelluksen tarkoituksena on toimia käyttäjille matematiikan opiskelussa, 
-esimerkiksi alakoululaiselle, kertolaskuissa.
+Käyttäjä voi tallentaa tehtäviä ja niiden tehtävien vastauksia tulevaisuutta varten muistiin.
 
 ## Käyttäjät
 
-Käyttäjinä toimii opettaja ja opiskelijat. 
-Opettajat voivat lisätä tehtäviä, 
-ja opiskelijat tekevät tehtäviä.
+Sovelluksella on vain yksi normaali käyttäjä rooli.
 
 ## Käyttöliittymä
 
-Kirjautumisnäkymä aukeaa ensimmäisenä, 
-josta kirjauduttua opiskelijat saavat tehtävä valikon, 
-josta pääsee erilaisiin tehtäviin.
-Opettajan kirjautuessa saa valita meneekö tehtävä näkymään vai tehtävien luomis näkymään.
-Käyttäjän luominen, joko tapahtuu erikseen opettajan toimesta tai sitten sovelluksessa.
+Kirjautumisnäkymä aukeaa ensimmäisenä. 
+Kirjautumisnäkymästä voi mennä rekisteröitymisnäkymään luomaan tunnuksen.
+Kirjautumisen tai uuden käyttäjän luomisen jälkeen pääsee tehtävä näkymään, ja käyttäjä voi aloittaa lisäämään tehtäviä
 
 ## Perusversion tarjoama toiminnallisuus
 
-### Tunnuksen luominen
+### Tunnuksen luominen ja kirjautuminen
 
-+ Opettaja rekisteröityy itse tai hänelle teetetään tunnuksen, 
-jonka jälkeen hän voi luoda tunnuksia opiskelijoille, TEHTY
-+ tai opiskelijat ja opettajat luovat itselleen tunnuksia.
++ Käyttäjä voi luoda tunnuksen sovellukselle
+++ Tunnus luodaan menemällä create-sivulle ja kirjoittamalla uusi tunnus ja salasana sinne.
+++ Tunnuksia voi luoda useita kappaleita, kunhan ne ovat eri nimisiä, muuten yrityksestä tulee virhe
++ Käyttäjä voi kirjautua sovellukseen
+++ Kirjautuminen onnistuu ensimmäisellä sivulla kirjoittamalla käyttäjätunnus, salasana ja painamalla Login-painikeeta
+++ Jos tunnusta ei ole olemassa tai salasana on väärin tulee virheilmoitus.
 
 ### Kirjautumisen jälkeen
 
-+ Opettajat, joko voivat luoda tehtäviä. 
-+ Opiskelijat näkevät tehtäväryhmiä, voivat valita niistä jonkin ja alkaa tekemään tehtäviä.
++ Käyttäjä pystyy aloittaa luomaan tehtäviä
++ Luodut tehtävät ilmestyvät sovelluksen alaosaan, ja jos tehtäviä on jo luotu niin ne ilmestyvät päästäessään sille sivulle
++ Jokainen tehtävä on uniikki sille käyttäjätunnukselle, jolla se on tehty
++ Käyttäjä voi kirjautua ulos 
 
 ## Jatkokehitysideoita
 
++ Tehdä tehtäviä
 + Saada pisteitä tehtävistä
 + Merkitä tehtäviä tekemättömiksi
-+ Eri asteiden opiskelijoille eri tehtäviä
-+ Tiedon poisto
-+ Salasanat
