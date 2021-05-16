@@ -13,12 +13,12 @@ Sovelluksessa voi luoda tunnuksen, kirjautua ja lisätä tehtäviä ja niiden va
 2. Alustetaan tietokanta   "poetry run invoke build"  
 3. Käynnistetään sovelllus "poetry run invoke start"
 
-# Komennot  
-## Ohjelman suoritus  
+## Komennot  
+### Ohjelman suoritus  
 poetry run invoke start  
 
-## Testaus  
+### Testaus  
 poetry run invoke test  
 
-## Testikattavuus  
+### Testikattavuus  
 poetry run invoke coverage-report  
