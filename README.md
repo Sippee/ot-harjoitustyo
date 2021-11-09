@@ -1,4 +1,4 @@
 # Ohjelmistotekniikka
-Viikko 1
+## Viikko 1
 - *komentorivi*
 - **gitlog**
