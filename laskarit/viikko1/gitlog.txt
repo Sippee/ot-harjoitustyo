@@ -1,0 +1,95 @@
+commit 9e9efec23f2bfff49050a4352637bb57bf9b6b7e
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 22:13:09 2021 +0200
+
+    file muutokset
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 689086b256193d05e25b62a1902b5c59cc00c809
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 22:11:05 2021 +0200
+
+    tiedostoja lisäys
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit e6977b6315079401c5a3f77da66bf7d316923d9a
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 22:08:16 2021 +0200
+
+    eka ja kolmas muutoksia
+
+ eka.txt    | 2 +-
+ kolmas.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 70b433459793a664168fc7ee9f0c5751896b5c1c
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 22:06:27 2021 +0200
+
+    tiedosto.txt nimen vaihto
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1e0ef3f952ce21438aed0deca95b20d2bae01d0e
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 22:05:21 2021 +0200
+
+    toinen.txt poisto
+
+ toinen.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 17f7132206e5ef157dfb169a35d60368e53fc914
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 22:04:17 2021 +0200
+
+    tiedosto.txt muutos
+
+ tiedosto.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 40ef1f3f9734037c811dbbe9504089d9d77c9bd5
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 22:00:33 2021 +0200
+
+    stuff hakemisto
+
+ stuff/jokin_tiedosto | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e24fa79fc177aa07dbdc59ec8bb24f190efed630
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 21:59:32 2021 +0200
+
+    lisätty kolmas
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ac5ded56b460f716dc1a22f3208729649fa5be8c
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 21:58:00 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 0e1378c9e784e8ec7e17e2a7a4879c72d9689669
+Author: Sippee <sippegaming@gmail.com>
+Date:   Tue Nov 9 21:56:33 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
