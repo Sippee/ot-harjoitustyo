@@ -23,7 +23,7 @@ Sovellus koostuu kolmesta näkymästä. Kirjautusnäkymä aukeaa ensimmäisenä,
 ### Kirjautumisen jälkeen
 
 - käyttäjä näkee tulostaulun  
- - tulostauluun kirjataan parhaimmat pisteet
+  - tulostauluun kirjataan parhaimmat pisteet
 
 - käyttäjä voi aloittaa pelin
 - käyttäjä voi kirjautua ulos
