@@ -26,6 +26,7 @@ Sovellus koostuu kolmesta näkymästä. Kirjautusnäkymä aukeaa ensimmäisenä,
   - tulostauluun kirjataan parhaimmat pisteet
 
 - käyttäjä voi aloittaa pelin
+  - pelissä kerätään pisteitä pacman-tyylisesti
 - käyttäjä voi kirjautua ulos
 
 ## Jatkokehitysideoita
