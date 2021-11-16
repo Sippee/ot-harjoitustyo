@@ -17,6 +17,7 @@ Sovellus koostuu kolmesta näkymästä. Kirjautusnäkymä aukeaa ensimmäisenä,
 ### Ennen kirjautumista
 
 - käyttäjä voi luoda käyttäjätunnuksen
+
 - käyttäjä voi kirjautua
 
 ### Kirjautumisen jälkeen
