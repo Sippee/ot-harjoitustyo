@@ -2,7 +2,7 @@
 
 ## Sovelluksen tarkoitus
 
-Sovellus on peli, jossa kerätään pisteitä pacman-tyylisesti. Peliin voi kirjautua, ja pelin pisteet tallentuvat siten käyttäjälle.
+Sovellus on peli, jossa kerätään kolikoita snake pelin tyylisesti. Peliin voi kirjautua, ja pelin pisteet tallentuvat siten käyttäjälle.
 
 ## Käyttäjät
 
