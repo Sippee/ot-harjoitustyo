@@ -3,4 +3,5 @@
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
 | 16.11.| 1    | dokumentaatio|
-| yht   | 1    |
+| 23.11.| 6    | Tein user luokan, ja sille repositoryn, ja serviceen sille toimintoja. En ehtinyt saada testejä toimiviksi... |
+| yht   | 7    |
