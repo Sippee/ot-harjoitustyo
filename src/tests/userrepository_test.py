@@ -4,7 +4,7 @@ from entities.user import User
 
 class TestUserData(unittest.TestCase):
     def setUp(self):
-        self.user_data = UserRepository("data/data.db")
+        self.user_data = UserRepository("src/data.db")
         self.user_data.deleteall()
         self.user1 = User("Matti","keijotin")
         self.user2 = User("Keijo", "kaspertin")

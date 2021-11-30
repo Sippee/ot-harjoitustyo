@@ -56,4 +56,4 @@ class UserRepository:
         self.connection.commit()
 
 # Tiedoston sijainti ja tyyppi
-user_repository = UserRepository("data/data.db")
+user_repository = UserRepository("data.db")
