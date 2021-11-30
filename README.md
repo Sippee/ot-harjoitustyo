@@ -4,6 +4,7 @@ Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Peliin voi kirjautua, 
 ## Dokumentaatio  
 [Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)  
 [Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)  
+[Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
 
 ## Asennus
 
