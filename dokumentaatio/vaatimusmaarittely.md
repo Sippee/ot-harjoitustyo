@@ -16,9 +16,9 @@ Sovellus koostuu kolmesta näkymästä. Kirjautusnäkymä aukeaa ensimmäisenä,
 
 ### Ennen kirjautumista
 
-- käyttäjä voi luoda käyttäjätunnuksen
+- käyttäjä voi luoda käyttäjätunnuksen, Tehty
 
-- käyttäjä voi kirjautua
+- käyttäjä voi kirjautua, Tehty
 
 ### Kirjautumisen jälkeen
 
@@ -27,7 +27,7 @@ Sovellus koostuu kolmesta näkymästä. Kirjautusnäkymä aukeaa ensimmäisenä,
 
 - käyttäjä voi aloittaa pelin
   - pelissä kerätään pisteitä pacman-tyylisesti
-- käyttäjä voi kirjautua ulos
+- käyttäjä voi kirjautua ulos, Tehty
 
 ## Jatkokehitysideoita
 
