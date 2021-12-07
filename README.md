@@ -49,7 +49,7 @@ poetry run invoke test
 Testikattavuusraportin voi generoida komennolla:
 
 ```bash
-poetry run invoke coverage-report
+poetry run invoke coveragereport
 ```
 
 Raportti generoituu _htmlcov_-hakemistoon.
