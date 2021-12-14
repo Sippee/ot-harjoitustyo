@@ -6,7 +6,7 @@ def start(ctx):
 
 
 @task
-def db(ctx):
+def build(ctx):
     ctx.run("python src/initialize_database.py")
 
 

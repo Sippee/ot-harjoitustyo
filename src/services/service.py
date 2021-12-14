@@ -39,7 +39,7 @@ class Service:
         """
 
         username_available = self._user_repository.findname(username)
-        if username_available is not None and username_available.username == username:
+        if username_available is not None and username_available[0] == username:
             raise UserError("This username is already used")
 
         user = self._user_repository.create(User(username, password))
@@ -64,7 +64,7 @@ class Service:
 
         user = self._user_repository.findname(username)
 
-        if not user or user.password != password:
+        if not user or user[1] != password:
             raise UserError("Either Username or Password is invalid")
 
         self._user = user
