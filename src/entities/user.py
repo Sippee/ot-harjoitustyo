@@ -8,6 +8,7 @@ class User:
         Args:
             username: String, the username of the user
             password: String, the password of the user
+
         """
 
         self.username = username

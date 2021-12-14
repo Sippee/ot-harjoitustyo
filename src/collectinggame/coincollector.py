@@ -111,7 +111,7 @@ def main_game():
         clock.tick(FPS)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                runninggame = False
+                runningisgame = False
 
 
     # Fill the window, draw objects and texts

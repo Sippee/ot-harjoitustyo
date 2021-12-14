@@ -98,6 +98,26 @@ class Service:
 
     def game(self):
         collected_points = main_game()
+        """
+        if collected_points > self._user.hiscore:
+            self._user_repository.update_score(self._user.username, collected_points)
+        """
         return collected_points
+
+    """
+    def top10_hiscore(self):
+        
+        Returns:
+            10 user-objects as a list which have the highest score.
+        
+
+        top10 = []
+        for user in self._user_repository.read_all_top10_hiscore():
+            score = user.hiscore
+            name = user.username
+            top10.append(f"Score: {score}, Name: {name}")
+
+        return top10
+    """
 
 service = Service()

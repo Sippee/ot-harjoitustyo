@@ -61,7 +61,7 @@ class UserRepository:
         """Returns all users from the database.
 
         Returns:
-            Returns all users from the databased as a list.
+            Returns all users from the database as a list.
         """
 
         cursor = self.connection.cursor()
@@ -86,6 +86,37 @@ class UserRepository:
         cursor.execute("delete from user")
 
         self.connection.commit()
+
+    """def update_score(self, username, score):
+        Updates the hiscore of the user
+        
+
+        cursor = self.connection.cursor()
+
+        cursor.execute(f"UPDATE user SET hiscore = {score} WHERE username = {username}")
+
+        self.connection.commit()
+
+    def read_all_top10_hiscore(self):
+        Returns 10 users from the database with the highest score.
+
+        Returns:
+            Returns 10 users from the database as a list.
+        
+
+        cursor = self.connection.cursor()
+
+        cursor.execute("select * from user ORDER BY hiscore desc LIMIT 10")
+
+        rows = cursor.fetchall()
+        
+        users = []
+
+        for row in rows:
+            users.append(User(row[0],row[1], row[2]))
+
+        return users
+    """
 
 # Tiedoston sijainti ja tyyppi
 user_repository = UserRepository("data.db")

@@ -45,4 +45,9 @@ while option != "4":
     if option=="0":
         print(f"You collected {service_handler.game()} points")
 
-#väliaikainen
+    """
+    if option =="5":
+        for row in service_handler.top10_hiscore():
+            print(f"{row}\n")
+    """
+# OPTION 4 NOT WORKING ATM FOR SOME REASON
