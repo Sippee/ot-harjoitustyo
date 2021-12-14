@@ -8,6 +8,7 @@ authors = ["Sippee <sippegaming@gmail.com>"]
 python = "^3.8.12"
 invoke = "^1.6.0"
 db-sqlite3 = "^0.0.1"
+pygame = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

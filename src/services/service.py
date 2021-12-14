@@ -1,5 +1,6 @@
 from entities.user import User
 from repositories.user_repository import user_repository as default_user_repository
+from collectinggame.coincollector import main_game
 
 class UserError(Exception):
     """A exception class that we can use as a error message
@@ -94,5 +95,9 @@ class Service:
         """
 
         self._user = None
+
+    def game(self):
+        collected_points = main_game()
+        return collected_points
 
 service = Service()
