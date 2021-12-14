@@ -25,7 +25,7 @@ Sovellus koostuu kolmesta näkymästä. Kirjautusnäkymä aukeaa ensimmäisenä,
 - käyttäjä näkee tulostaulun  
   - tulostauluun kirjataan parhaimmat pisteet
 
-- käyttäjä voi aloittaa pelin
+- käyttäjä voi aloittaa pelin, Tehty
   - pelissä kerätään pisteitä pacman-tyylisesti
 - käyttäjä voi kirjautua ulos, Tehty
 
