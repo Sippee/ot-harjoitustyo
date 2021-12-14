@@ -2,44 +2,44 @@ from entities.user import User
 from repositories.user_repository import user_repository as default_user_repository
 
 class UserError(Exception):
-
-    """Luokka on poikkeus
-    Käytämme poikkeusta virheilmoituksena
+    """A exception class that we can use as a error message
     """
 
     pass
 
 class Service:
-
-    """Luokka kuvaa sovelluksenlogiikan"""
+    """A class used to present the application logic.
+    """
 
     def __init__(self, user_repository = default_user_repository):
+        """Constructor of the class, which handles the application logic.
 
-        """Sovelluslogiikasta vastaavan luokan konstruktori.
         Args:
             user_repository:
-                Vapaehtoinen
-                UserRepository-olio, joka omaa UserRepository luokan metodit
+                Optional
+                UserRepository-object, which handles reading and writing to the database
         """
 
         self._user = None
         self._user_repository = user_repository
 
     def create_user(self, username, password, login = True):
+        """Creates a new user
 
-        """Luodaan uusi käyttäjä
         Args:
-            username: Merkkijonoarvo, kuvaa käyttäjän käyttäjätunnusta
-            password: Merkkijonoarvo, kuvaa käyttäjän salasanaa
+            username: String, presents the username of the user
+            password: String, presents the password of the user
+
         Returns:
-            Kyseisen käyttäjän User-oliona
+            The created user
+
         Raises:
             UserError:
-                Virhe uuden käyttäjän rekisteröinnissä
+                Error while creating new user
         """
 
         username_available = self._user_repository.findname(username)
-        if username_available is not None and username_available[0] == username:
+        if username_available is not None and username_available.username == username:
             raise UserError("This username is already used")
 
         user = self._user_repository.create(User(username, password))
@@ -50,21 +50,23 @@ class Service:
         return user
 
     def login(self, username, password):
+        """The user logging in the application
 
-        """Kirjaudutaan käyttäjä sovelluksen sisälle
         Args:
-            username: Merkkijonoarvo, kuvaa käyttäjän käyttäjätunnusta
-            password: Merkkijonoarvo, kuvaa käyttäjän salasanaa
+            username: String, presents the username of the user
+            password: String, presents the password of the user
+
         Returns:
-            Kirjautuvan käyttäjän User-oliona
+            The user that logged in
+
         Raises:
             UserError:
-                Virhe kirjautuessa
+                Error while logging in
         """
 
         user = self._user_repository.findname(username)
 
-        if not user or user[1] != password:
+        if not user or user.password != password:
             raise UserError("Either Username or Password is invalid")
 
         self._user = user
@@ -72,26 +74,24 @@ class Service:
         return user
 
     def get_user(self):
-
         """
         Returns:
-            Kirjautuneen käyttäjän User oliona
+            The user that is logged in
         """
 
         return self._user
 
     def get_users(self):
-
         """
         Returns:
-            Kaikki User oliot listana.
+            All user-objects as a list.
         """
 
         return self._user_repository.readall()
 
     def logout(self):
-
-        """Kirjaa kirjautuneen käyttäjän ulos sovelluksesta"""
+        """Logs the user, that is logged in, out from the application
+        """
 
         self._user = None
 

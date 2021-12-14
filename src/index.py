@@ -1,14 +1,5 @@
 from services.service import Service, UserError
 
-def create_user(name, password):
-    Service.create_user(name,password)
-
-def login(name, password):
-    Service.login(name,password)
-
-def logout():
-    Service.logout()
-
 service_handler = Service()
 
 option = "0"

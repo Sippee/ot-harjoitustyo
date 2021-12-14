@@ -1,6 +1,11 @@
 import sqlite3 as sl
 
+"""Used to initialize the database
+"""
+
 def delete_db():
+    """Erases the database
+    """
     con = sl.connect('data.db')
     cursor = con.cursor()
 
@@ -9,6 +14,8 @@ def delete_db():
     con.commit()
 
 def create_db():
+    """Creates new table into the database
+    """
     con = sl.connect('data.db')
     cursor = con.cursor()
 
