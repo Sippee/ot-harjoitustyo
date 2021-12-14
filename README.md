@@ -5,6 +5,7 @@ Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Peliin voi kirjautua, 
 [Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)  
 [Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)  
 [Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
+[Käyttöohje](dokumentaatio/kayttoohje.md)
 
 ## Asennus
 
@@ -61,3 +62,6 @@ Pylintin alkuperäiset tarkistukset voi suorittaa komennolla:
 ```bash
 poetry run invoke lint
 ```
+
+## Tällä hetkellä ei toiminnassa oleva ominaisuus
+Sovellus ei oikein halua sammua ainakaan omalla koneellani, en ehtinyt korjaa vielä
