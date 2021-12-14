@@ -17,7 +17,7 @@ class TestUserData(unittest.TestCase):
     def test_findname(self):
         self.user_data.create(self.user1)
         data = self.user_data.findname(self.user1.username)
-        self.assertEqual(data[0], self.user1.username)
+        self.assertEqual(data.username, self.user1.username)
 
     def test_readall(self):
         self.user_data.create(self.user1)
