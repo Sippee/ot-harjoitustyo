@@ -8,7 +8,7 @@ Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Peliin voi kirjautua, 
 [Käyttöohje](dokumentaatio/kayttoohje.md)
 
 ## Releases
-[Releases](https://github.com/Sippee/ot-harjoitustyo/releases/tag/latest)
+[Releases](https://github.com/Sippee/ot-harjoitustyo/releases)
 
 ## Asennus
 
