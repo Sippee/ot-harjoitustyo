@@ -7,6 +7,9 @@ Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Peliin voi kirjautua, 
 [Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
 [Käyttöohje](dokumentaatio/kayttoohje.md)
 
+## Releases
+[Releases](https://github.com/Sippee/ot-harjoitustyo/releases/tag/latest)
+
 ## Asennus
 
 1. Asenna riippuvuudet komennolla:
