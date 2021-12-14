@@ -7,4 +7,4 @@
 | 30.11.| 2    | Sain testit onnistumaan, ja pylintin |
 | 7.12.| 2    | Sain ehkä toimimaan laitoksen koneella, ja lisää testejä ja testienkattavuutta, ja muuta koodin korjausta |
 | 14.12.| 7    | Sain pelin toimimaan, korjasin paljon kaikkea, lisäsin docstringejä(pylint tarkastaa tests kansion myös) |
-| yht   | 9    |
+| yht   | 16    |
