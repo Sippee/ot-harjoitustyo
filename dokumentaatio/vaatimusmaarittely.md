@@ -35,4 +35,4 @@ Sovellus koostuu neljästä näkymästä. Kirjautusnäkymä aukeaa ensimmäisen�
 - peli vaikeammaksi
 - käyttäjien poisto
 - käyttäjälle konfiguroitavaa
--- tiedoston sijainnista tai pelin kestosta päättäminen
+  - tiedoston sijainnista tai pelin kestosta päättäminen
