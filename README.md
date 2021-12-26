@@ -1,4 +1,4 @@
-# Kolikoiden keräys peli
+# Kolikko Jahti
 Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Sovellukseen voi kirjautua. Pelistä saa pisteitä. Kymmenen parhaan pisteet esitellään tulostaulussa.
 
 ## Dokumentaatio  
