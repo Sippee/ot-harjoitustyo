@@ -3,80 +3,9 @@
 
 from random import randint
 import pygame
-
-class Coin:
-    """A class used to present the coin in the game.
-    The collector collects these in the game.
-    """
-    def __init__(self,x_coordinate,y_coordinate,window):
-        """Constructor of the class, which handles the properties of the coin.
-
-        Args:
-            coin:
-                x: x coordinate of the coin
-                y: y coordinate of the coin
-                window: Window-object. Window which the coin is part of.
-        """
-
-        self.x_coordinate = x_coordinate
-        self.y_coordinate = y_coordinate
-        self.height = 20
-        self.width = 20
-        self.coinimage = pygame.image.load('src/collectinggame/images/coinv2.png')
-        self.window = window
-
-    def draw(self):
-        """Draws the coin
-        """
-
-        self.rect = self.window.game_window.blit(self.coinimage,
-        (self.x_coordinate, self.y_coordinate))
-
-class Collector:
-    """A class used to present the collector in the game.
-    The collector is the character that player moves in the game.
-    """
-    def __init__(self,x_coordinate,y_coordinate,window):
-        """Constructor of the class, which handles the properties of the collector.
-
-        Args:
-            coin:
-                x: x coordinate of the coin
-                y: y coordinate of the coin
-                window: Window-object. Window which the collector is part of.
-        """
-
-        self.x_coordinate = x_coordinate
-        self.y_coordinate = y_coordinate
-        self.width = 40
-        self.height = 40
-        self.speed = 5
-        self.collectorimage = pygame.image.load(
-            'src/collectinggame/images/coincollector.png')
-        self.window = window
-
-    def draw(self):
-        """Draws the player controlled collector
-        """
-
-        self.rect = self.window.game_window.blit(self.collectorimage,
-        (self.x_coordinate, self.y_coordinate))
-
-class Window:
-    """A class used to present the game window for the game.
-    """
-    def __init__(self, width, height):
-        """Constructor of the class, which handles the properties of the game window.
-
-        Args:
-            coin:
-                width: Width of the window
-                height: Height of the window
-        """
-
-        self.width = width
-        self.height = height
-        self.game_window = pygame.display.set_mode((self.width,self.height))
+from collectinggame.coin import Coin
+from collectinggame.collector import Collector
+from collectinggame.window import Window
 
 def main_game(game_length):
     """This method hold the game logic.

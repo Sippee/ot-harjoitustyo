@@ -16,7 +16,7 @@ class UI:
     def start(self):
         """Starts the application
         """
-        
+
         self._show_login_view()
 
     def _hide_current_view(self):
