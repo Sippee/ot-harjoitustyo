@@ -143,4 +143,4 @@ class UserRepository:
 
 
 # Location of the database file and the type of the file
-user_repository = UserRepository("data.db")
+user_repository = UserRepository("data/data.db")

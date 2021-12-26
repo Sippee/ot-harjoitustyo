@@ -6,7 +6,7 @@ import sqlite3 as sl
 def delete_db():
     """Erases the database
     """
-    con = sl.connect('data.db')
+    con = sl.connect('data/data.db')
     cursor = con.cursor()
 
     cursor.execute('''drop table if exists user;''')
@@ -16,7 +16,7 @@ def delete_db():
 def create_db():
     """Creates new table into the database
     """
-    con = sl.connect('data.db')
+    con = sl.connect('data/data.db')
     cursor = con.cursor()
 
     cursor.execute('''create table user
