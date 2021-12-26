@@ -49,17 +49,23 @@ Kun kirjautumisnäkymän syötekenttiin kirjoitetaan käyttäjätunnus ja salasa
 
 ![image](kuvat/arkkitehtuuri-seq-diagram-login.PNG)
 
+Painikkeen painamiseen reagoiva tapahtumankäsittelijä kutsuu sovelluslogiikan Service metodia login antaen parametriksi käyttäjätunnuksen ja salasanan. Sovelluslogiikka selvittää UserRepositoryn avulla onko käyttäjätunnus olemassa. Jos on, tarkastetaan täsmääkö salasanat. Jos salasanat täsmäävät, kirjautuminen onnistuu. Tämän seurauksena käyttöliittymä vaihtaa näkymäksi MainView, eli sovelluksen päänäkymän ja näyttää myös tulostaulun, joka esittää 10 parhaan pisteet.
+
 ### Uuden käyttäjän luominen
 
 Kun uuden käyttäjän luomisnäkymässä on syötetty käyttäjätunnus, joka ei ole jo käytössä sekä salana, jonka jälkee klikataan painiketta "Create" etenee sovelluksen kontrolli seuraavasti:
 
-![image](kuvat/arkkitehtuuri-seq-diagram-register.PNG)
+![image](kuvat/arkkitehtuuri-seq-diagram-register.PNG)'
+
+Tapahtumakäsittelijä kutsuu sovelluslogiikan metodia create_user antaen parametriksi luotavan käyttäjän tiedot. Sovelluslogiikka selvittää UserRepositoryn avulla onko käyttäjätunnus olemassa. Jos ei, eli uuden käyttäjän luominen on mahdollista, luo sovelluslogiikka User-olion ja tallettaa sen kutsumalla UserRepositoryn metodia create. Tästä seurauksena on se, että käyttöliittymä vaihtaa näkymäksi MainView:n. Luotu käyttäjä kirjataan automaattisesti sisään.
 
 ### Pelin aloitus
 
 Uuden pelin aloitus painamalla painiketta "Play" klikkaamisen jälkeen sovelluksen kontrolli etenee seuraavasti:
 
 ![image](kuvat/arkkitehtuuri-seq-diagram-game.PNG)
+
+Tapahtumakäsittelijä kutsuu sovelluslogiikan metodia game. Sovelluslogiikka kutsuu tämän jälkeen coincollector pelin metodia main_game. Pelin päättyessä se tallentaa pisteet tietokantaan, jos pisteet ylittävät edelliset pisteet. main_game metodi palauttaa sovelluslogiikalle pistemäärän, ja sovelluslogiikka palauttaa tämän pistemäärän käyttöliittymälle, joka luo pop-up ikkunan, jossa kerrotaan saatujen pisteiden määrä. Peli sammuu ja ollaa päänäkymässä.
 
 ### Muut toiminnaliisuudet
 
