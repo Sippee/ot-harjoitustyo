@@ -1,5 +1,5 @@
 # Kolikoiden keräys peli
-Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Peliin voi kirjautua, ja pelin pisteet tallentuvat siten käyttäjälle.
+Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Sovellukseen voi kirjautua. Pelistä saa pisteitä. Kymmenen parhaan pisteet esitellään tulostaulussa.
 
 ## Dokumentaatio  
 [Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)  
