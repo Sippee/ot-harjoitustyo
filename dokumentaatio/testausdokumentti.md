@@ -34,7 +34,7 @@ Kaikki määrittelydokumentin ja käyttöohjeen listaamat toiminnallisuudet on k
 
 ## Sovellukseen jääneet laatuongelmat
 
-Pelin logiikka on huonosti refraktoitu, joten sen testejä ei vielä saatu tehtyä.
+Pelin logiikka on huonosti refraktoitu, joten sen yksikkötestejä ei vielä saatu tehtyä.
 
 Sovellus ei anna tällä hetkellä järkeviä virheilmoituksia, seuraavissa tilanteissa:
 
