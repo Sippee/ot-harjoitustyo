@@ -6,7 +6,11 @@ Ohjelmaa on testattu sekä automatisoiduin yksikkö- ja integraatiotestein unitt
 
 ### Sovelluslogiikka
 
-Sovelluslogiikasta vastaavaa `Service`-luokkaa testataan TestService-testiluokalla. `Service`-olio alustetaan, niin että sille injektoidaan riippuvuuksiksi repositorio-olio, joka tallentaa tietoa muistiin pysyväistallennuksen sijaan. Tätä varten testissä on käytössä luokat FakeUserRepository.
+Sovelluslogiikasta vastaavaa 'Service'-luokkaa testataan 'TestService'-testiluokalla. `Service`-olio alustetaan, niin että sille injektoidaan riippuvuuksiksi repositorio-olio, joka tallentaa tietoa muistiin pysyväistallennuksen sijaan. Tätä varten testissä on käytössä luokat FakeUserRepository.
+
+### Pelilogiikka
+
+Pelinlogiikasta vastaavat 'Coin'- ja 'Collector'-luokat testataan niille vastaavilla 'TestCoin'- ja 'TestCollector'-luokilla. Pelin refraktoinnin jälkee voisi luoda testiluokan 'TestCoinCollector', ja testata sen avulla pelin logiikkaa.
 
 ### Repositorio-luokat
 
