@@ -99,13 +99,16 @@ class Service:
 
         self._user = None
 
-    def game(self):
+    def game(self, game_length = 30000):
         """Runs the main game, tries update the score on the database
+
+        Args:
+            game_length: Optional, Length of the game, 30000 means 30 seconds.
 
         Returns:
             collected_points: How many points the player collected during the game
         """
-        collected_points = main_game()
+        collected_points = main_game(game_length)
 
         self._user_repository.update_score(self._user.username, collected_points)
 

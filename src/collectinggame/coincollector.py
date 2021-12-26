@@ -78,8 +78,11 @@ class Window:
         self.height = height
         self.game_window = pygame.display.set_mode((self.width,self.height))
 
-def main_game():
+def main_game(game_length):
     """This method hold the game logic.
+
+    Args:
+        game_length: Optional, Length of the game, 30000 means 30 seconds.
 
     Returns:
         Score: How many coins the player collected within one game.
@@ -121,7 +124,7 @@ def main_game():
 
     # Main game loop
     runningisgame = True
-    while pygame.time.get_ticks() < 30000 and runningisgame is True:
+    while pygame.time.get_ticks() < game_length and runningisgame is True:
         clock.tick(refreshrate)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
