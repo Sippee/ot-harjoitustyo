@@ -14,11 +14,11 @@ Repositorio-luokka UserRepository testataan tällä hetkellä samalla tiedostoll
 
 ### Testauskattavuus
 
-Käyttöliittymäkerrosta lukuunottamatta sovelluksen testauksen haarautumakattavuus on 95%
+Käyttöliittymäkerrosta lukuunottamatta sovelluksen testauksen haarautumakattavuus on 80%
 
 ![image](kuvat/testaus-kattavuus.PNG)
 
-Itse peli on melko huonosti refraktoitu. Niin peli jäi huonosti testatuksi.
+Itse peli on melko huonosti refraktoitu. Niin se jäi huonosti testatuksi.
 
 ## Järjestelmätestaus
 
