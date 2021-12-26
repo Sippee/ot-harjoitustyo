@@ -6,6 +6,7 @@ Peli, jossa kerätään kolikoita snake-pelin tyylisesti. Sovellukseen voi kirja
 [Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)  
 [Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)  
 [Käyttöohje](dokumentaatio/kayttoohje.md)
+[Testausdokumentti](dokumentaatio/testausdokumentti.md)
 
 ## Releases
 [Releases](https://github.com/Sippee/ot-harjoitustyo/releases)
