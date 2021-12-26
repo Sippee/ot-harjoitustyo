@@ -65,6 +65,3 @@ Pylintin alkuperäiset tarkistukset voi suorittaa komennolla:
 ```bash
 poetry run invoke lint
 ```
-
-## Tällä hetkellä ei toiminnassa oleva ominaisuus
-Sovellus ei oikein halua sammua ainakaan omalla koneellani, en ehtinyt korjaa vielä
