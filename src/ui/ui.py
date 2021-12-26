@@ -4,6 +4,9 @@ from ui.create_user_view import CreateUserView
 
 
 class UI:
+    """A class used to handle the UI.
+    """
+
     def __init__(self, root):
         self._root = root
         self._current_view = None

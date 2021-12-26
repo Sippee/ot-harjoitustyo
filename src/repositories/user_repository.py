@@ -13,7 +13,7 @@ class UserRepository:
             filepath: 
                 string: tells where the database is and it's name
             connection:
-                Connection-object: which creates the connection to the database.
+                Connection-object: creates the connection to the database.
         """
 
         self.connection = sl.connect(filepath)

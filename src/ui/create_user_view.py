@@ -5,6 +5,9 @@ from services.service import service, UserError
 
 
 class CreateUserView:
+    """A class used to present user creation view.
+    """
+
     def __init__(self, root, handle_create, handle_loginview):
         self._root = root
         self._handle_create = handle_create
