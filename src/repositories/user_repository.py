@@ -11,9 +11,9 @@ class UserRepository:
 
         Args:
             filepath: 
-                string, tells where the database is and it's name
+                string: tells where the database is and it's name
             connection:
-                Connection-object, which creates the connection to the database.
+                Connection-object: which creates the connection to the database.
         """
 
         self.connection = sl.connect(filepath)
@@ -31,7 +31,7 @@ class UserRepository:
 
         cursor = self.connection.cursor()
 
-        cursor.execute("insert into user (username, password) values (?, ?)", (user.username, user.password))
+        cursor.execute("insert into user (username, password, score) values (?, ?, 0)", (user.username, user.password))
 
         self.connection.commit()
 
@@ -73,7 +73,7 @@ class UserRepository:
         users = []
 
         for row in rows:
-            users.append(User(row[0],row[1]))
+            users.append(User(row[0],row[1], row[2]))
 
         return users
 
@@ -87,36 +87,57 @@ class UserRepository:
 
         self.connection.commit()
 
-    """def update_score(self, username, score):
-        Updates the hiscore of the user
-        
+    def find_score_by_name(self, username):
+        """Returns score from database by username.
+
+        Args:
+            username: Username of the user-object which is to be returned.
+
+        Returns:
+            Returns the hiscore of the user.
+        """
 
         cursor = self.connection.cursor()
 
-        cursor.execute(f"UPDATE user SET hiscore = {score} WHERE username = {username}")
+        cursor.execute("select score from user where username = ?", (username,))
+
+        score = cursor.fetchone()
+
+        found_score = score[0] if score else None
+
+        return found_score
+
+    def update_score(self, username, score):
+        """Updates the hiscore of the user
+        """
+        
+        cursor = self.connection.cursor()
+
+        if self.find_score_by_name(username) < score:
+            cursor.execute("UPDATE user SET score = ? WHERE username = ?", (score, username,))
 
         self.connection.commit()
 
     def read_all_top10_hiscore(self):
-        Returns 10 users from the database with the highest score.
+        """Returns 10 users from the database with the highest score.
 
         Returns:
             Returns 10 users from the database as a list.
-        
+        """
 
         cursor = self.connection.cursor()
 
-        cursor.execute("select * from user ORDER BY hiscore desc LIMIT 10")
+        cursor.execute("select * from user ORDER BY score desc LIMIT 10")
 
         rows = cursor.fetchall()
         
         users = []
 
         for row in rows:
-            users.append(User(row[0],row[1], row[2]))
+            users.append((row[0], row[2]))
 
         return users
-    """
+    
 
-# Tiedoston sijainti ja tyyppi
+# Location of the database file and the type of the file
 user_repository = UserRepository("data.db")

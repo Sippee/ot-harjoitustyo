@@ -19,7 +19,7 @@ def create_db():
     con = sl.connect('data.db')
     cursor = con.cursor()
 
-    cursor.execute('''create table user (username text primary key, password text);''')
+    cursor.execute('''create table user (username text primary key, password text, score integer);''')
 
     con.commit()
 

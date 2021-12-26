@@ -21,6 +21,7 @@ class Coin:
         self.width = 20
         self.coinImg = pygame.image.load('src/collectinggame/images/coinv2.png')
         self.window = window
+
     def draw(self):
         self.rect = self.window.game_window.blit(self.coinImg, (self.x, self.y))
 
@@ -45,6 +46,7 @@ class Collector:
         self.speed = 5
         self.collectorImg = pygame.image.load('src/collectinggame/images/coincollector.png')
         self.window = window
+        
     def draw(self):
         self.rect = self.window.game_window.blit(self.collectorImg, (self.x, self.y))
 
