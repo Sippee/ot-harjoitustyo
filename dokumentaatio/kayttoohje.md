@@ -26,7 +26,7 @@ poetry run invoke start
 
 Sovellus käynnistyy kirjautumisnäkymään:
 
-![](./kuvat/kayttoohje-loginscreen.png)
+![](dokumentaatio/kuvat/kayttoohje-loginscreen.png)
 
 Kirjautuminen onnistuu kirjoittamalla olemassaoleva käyttäjätunnus sekä syötekenttään ja painamalla "Login"-painiketta.
 
@@ -36,13 +36,13 @@ Kirjautumisnäkymästä on mahdollista siirtyä uuden käyttäjän luomisnäkym�
 
 Uusi käyttäjä luodaan syöttämällä tiedot syötekenttiin ja painamalla "Create"-painiketta:
 
-![](./kuvat/kayttoohje-registerscreen.png)
+![](dokumentaatio/kuvat/kayttoohje-registerscreen.png)
 
 ## Kirjautumisen jälkeen
 
 Onnistuneen kirjautumisen myötä päästään näkemään kymmenen parhaan pisteet tai aloittamaan uusi peli.
 
-![](./kuvat/kayttoohje-loggedinscreen.png)
+![](dokumentaatio/kuvat/kayttoohje-loggedinscreen.png)
 
 Tulostaulu näyttää 10 parhaiden pisteiden saaneet, joilla on enemmän kuin 0 pistettä.
 
@@ -52,7 +52,7 @@ Klikkaamalla "Logout" käyttäjä kirjautuu ulos takaisin kirjautumisnäkymään
 
 Pelin aloittaessa aika alkaa kulumaan, ja käyttäjän on tarkoitus liikuttaa hahmoa ja kerätä mahdollisimman monta kolikkoa 30 sekuntissa.
 
-![](./kuvat/kayttoohje-game.png)
+![](dokumentaatio/kuvat/kayttoohje-game.PNG)
 
 Hahmo saa hieman lisää vauhtia jokaisen kerätyn kolikon jälkeen.
 
