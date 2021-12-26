@@ -1,6 +1,7 @@
-from tkinter import *
+"""Presents user creation view
+"""
+
 from tkinter import ttk, StringVar, constants
-from functools import partial
 from services.service import service, UserError
 
 
@@ -21,9 +22,15 @@ class CreateUserView:
         self._initialize()
 
     def pack(self):
+        """Packs the frame
+        """
+
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Destroyes the frame
+        """
+
         self._frame.destroy()
 
     def _create_handler(self):
@@ -50,9 +57,10 @@ class CreateUserView:
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
-        
+
         self._error_variable = StringVar(self._frame)
-        self._error_label = ttk.Label(master=self._frame, textvariable=self._error_variable, foreground='red')
+        self._error_label = ttk.Label(master=self._frame,
+        textvariable=self._error_variable, foreground='red')
         self._error_label.grid(row=2, column=1, padx=5, pady=5)
 
         username_label = ttk.Label(master=self._frame, text='Username')
@@ -67,10 +75,12 @@ class CreateUserView:
         self._password_entry = ttk.Entry(master=self._frame)
         self._password_entry.grid(row=1, column= 1, padx=5, pady=5, sticky=constants.EW)
 
-        login_button = ttk.Button( master=self._frame, text='Login Screen', command=self._handle_loginview)
+        login_button = ttk.Button(master=self._frame,
+        text='Login Screen', command=self._handle_loginview)
         login_button.grid(row=3, column=0, padx=5, pady=5, sticky=constants.EW)
 
-        create_user_button = ttk.Button(master=self._frame, text='Create', command=self._create_handler)
+        create_user_button = ttk.Button(master=self._frame,
+        text='Create', command=self._create_handler)
         create_user_button.grid(row=3, column=1, padx=5, pady=5, sticky=constants.EW)
 
         self._hide_error()

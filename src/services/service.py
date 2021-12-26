@@ -1,3 +1,6 @@
+"""Handles the application logic.
+"""
+
 from entities.user import User
 from repositories.user_repository import user_repository as default_user_repository
 from collectinggame.coincollector import main_game
@@ -71,7 +74,7 @@ class Service:
             raise UserError("Either Username or Password is invalid")
 
         self._user = user
-        
+
         return user
 
     def get_user(self):
@@ -103,12 +106,12 @@ class Service:
             collected_points: How many points the player collected during the game
         """
         collected_points = main_game()
-        
+
         self._user_repository.update_score(self._user.username, collected_points)
-        
+
         return collected_points
 
-    
+
     def top10_hiscore(self):
         """
         Returns:
@@ -123,6 +126,6 @@ class Service:
                 top10.append(f"{name:<30} {score:3d}")
 
         return top10
-    
+
 
 service = Service()

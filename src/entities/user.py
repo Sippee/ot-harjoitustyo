@@ -1,3 +1,6 @@
+"""Presents one user
+"""
+
 class User:
     """A class used to present one user
     """

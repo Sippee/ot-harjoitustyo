@@ -1,7 +1,7 @@
-from tkinter import *
-from tkinter import ttk, StringVar, constants, messagebox
-from functools import partial
-import tkinter
+"""Handles the views of the hiscore and after logging in.
+"""
+
+from tkinter import ttk, constants, messagebox
 from services.service import service
 
 class HiscoreView:
@@ -12,13 +12,19 @@ class HiscoreView:
         self._root = root
         self._hiscore = hiscore
         self._frame = None
-        
+
         self._initialize()
 
     def pack(self):
+        """Packs the frame
+        """
+
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Destroys the frame
+        """
+
         self._frame.destroy()
 
     def _initialize_hiscore_item(self, player):
@@ -54,9 +60,15 @@ class MainView:
         self._initialize()
 
     def pack(self):
+        """Packs the frame
+        """
+
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Destroys the frame
+        """
+
         self._frame.destroy()
 
     def _logout_handler(self):
@@ -89,7 +101,7 @@ class MainView:
 
         self._initialize_hiscore()
 
-        hiscore = Label(self._frame, text="HISCORE", font=("TkDefaultFont", 18, "bold"))
+        hiscore = ttk.Label(self._frame, text="HISCORE", font=("TkDefaultFont", 18, "bold"))
         hiscore.grid(row=0, column=2, padx=5, pady=5, sticky=constants.W)
 
         self._hiscore_frame.grid(row=1, column=1, columnspan=2, sticky=constants.EW)

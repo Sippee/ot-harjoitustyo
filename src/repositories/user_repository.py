@@ -1,6 +1,8 @@
-from entities.user import User
-import sqlite3 as sl
+"""Handles the data storing
+"""
 
+import sqlite3 as sl
+from entities.user import User
 
 class UserRepository:
     """A class used to present user data storing into .db file.
@@ -10,7 +12,7 @@ class UserRepository:
         """Constructor of the class, creates connection to the database.
 
         Args:
-            filepath: 
+            filepath:
                 string: tells where the database is and it's name
             connection:
                 Connection-object: creates the connection to the database.
@@ -31,7 +33,8 @@ class UserRepository:
 
         cursor = self.connection.cursor()
 
-        cursor.execute("insert into user (username, password, score) values (?, ?, 0)", (user.username, user.password))
+        cursor.execute("""insert into user
+        (username, password, score) values (?, ?, 0)""", (user.username, user.password))
 
         self.connection.commit()
 
@@ -69,11 +72,11 @@ class UserRepository:
         cursor.execute("select * from user")
 
         rows = cursor.fetchall()
-        
+
         users = []
 
         for row in rows:
-            users.append(User(row[0],row[1], row[2]))
+            users.append((row[0],row[1], row[2]))
 
         return users
 
@@ -110,7 +113,7 @@ class UserRepository:
     def update_score(self, username, score):
         """Updates the hiscore of the user
         """
-        
+
         cursor = self.connection.cursor()
 
         if self.find_score_by_name(username) < score:
@@ -130,14 +133,14 @@ class UserRepository:
         cursor.execute("select * from user ORDER BY score desc LIMIT 10")
 
         rows = cursor.fetchall()
-        
+
         users = []
 
         for row in rows:
             users.append((row[0], row[2]))
 
         return users
-    
+
 
 # Location of the database file and the type of the file
 user_repository = UserRepository("data.db")

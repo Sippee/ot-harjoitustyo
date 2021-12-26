@@ -1,6 +1,7 @@
-from tkinter import *
+"""Presents user creation view
+"""
+
 from tkinter import ttk, StringVar, constants
-from functools import partial
 from services.service import service, UserError
 
 class LoginView:
@@ -19,9 +20,15 @@ class LoginView:
         self._initialize()
 
     def pack(self):
+        """Packs the frame
+        """
+
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Destroys the frame
+        """
+
         self._frame.destroy()
 
     def _login_handler(self):
@@ -45,27 +52,29 @@ class LoginView:
         self._frame = ttk.Frame(master=self._root)
 
         self._error_variable = StringVar(self._frame)
-        self._error_label = ttk.Label(master=self._frame, textvariable=self._error_variable, foreground='red')
+        self._error_label = ttk.Label(master=self._frame,
+        textvariable=self._error_variable, foreground='red')
         self._error_label.grid(row=2, column=1, padx=5, pady=5)
 
-        usernameLabel = Label(self._frame, text="Username")
-        usernameLabel.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
+        usernamelabel = ttk.Label(self._frame, text="Username")
+        usernamelabel.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
 
         username = StringVar()
-        self._username_entry = Entry(self._frame, textvariable=username)
-        self._username_entry.grid(row=0, column=1, padx=5, pady=5, sticky=constants.EW)  
+        self._username_entry = ttk.Entry(self._frame, textvariable=username)
+        self._username_entry.grid(row=0, column=1, padx=5, pady=5, sticky=constants.EW)
 
-        passwordLabel = Label(self._frame,text="Password")
-        passwordLabel.grid(row=1, column=0, padx=5, pady=5, sticky=constants.W)  
+        passwordlabel = ttk.Label(self._frame,text="Password")
+        passwordlabel.grid(row=1, column=0, padx=5, pady=5, sticky=constants.W)
 
         password = StringVar()
-        self._password_entry = Entry(self._frame, textvariable=password, show='*')
-        self._password_entry.grid(row=1, column=1, padx=5, pady=5, sticky=constants.EW)  
+        self._password_entry = ttk.Entry(self._frame, textvariable=password, show='*')
+        self._password_entry.grid(row=1, column=1, padx=5, pady=5, sticky=constants.EW)
 
-        loginButton = Button(self._frame, text="Login", command=self._login_handler)
-        loginButton.grid(row=3, column=0, padx=5, pady=5, sticky=constants.EW)
-        
-        registerButton = Button(self._frame, text="Create user", command=self._handle_showcreateview)
-        registerButton.grid(row=3, column=1, padx=5, pady=5, sticky=constants.EW)
+        loginbutton = ttk.Button(self._frame, text="Login", command=self._login_handler)
+        loginbutton.grid(row=3, column=0, padx=5, pady=5, sticky=constants.EW)
+
+        registerbutton = ttk.Button(self._frame, text="Create user",
+        command=self._handle_showcreateview)
+        registerbutton.grid(row=3, column=1, padx=5, pady=5, sticky=constants.EW)
 
         self._hide_error()

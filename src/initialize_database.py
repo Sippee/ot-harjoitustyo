@@ -1,7 +1,7 @@
-import sqlite3 as sl
-
 """Used to initialize the database
 """
+
+import sqlite3 as sl
 
 def delete_db():
     """Erases the database
@@ -19,7 +19,10 @@ def create_db():
     con = sl.connect('data.db')
     cursor = con.cursor()
 
-    cursor.execute('''create table user (username text primary key, password text, score integer);''')
+    cursor.execute('''create table user
+    (username text primary key, 
+    password text, 
+    score integer);''')
 
     con.commit()
 

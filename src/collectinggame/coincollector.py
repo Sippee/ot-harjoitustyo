@@ -1,11 +1,14 @@
-import pygame
+"""Contains the logic of the game
+"""
+
 from random import randint
+import pygame
 
 class Coin:
     """A class used to present the coin in the game.
     The collector collects these in the game.
     """
-    def __init__(self,x,y,window):
+    def __init__(self,x_coordinate,y_coordinate,window):
         """Constructor of the class, which handles the properties of the coin.
 
         Args:
@@ -15,21 +18,25 @@ class Coin:
                 window: Window-object. Window which the coin is part of.
         """
 
-        self.x = x
-        self.y = y
+        self.x_coordinate = x_coordinate
+        self.y_coordinate = y_coordinate
         self.height = 20
         self.width = 20
-        self.coinImg = pygame.image.load('src/collectinggame/images/coinv2.png')
+        self.coinimage = pygame.image.load('src/collectinggame/images/coinv2.png')
         self.window = window
 
     def draw(self):
-        self.rect = self.window.game_window.blit(self.coinImg, (self.x, self.y))
+        """Draws the coin
+        """
+
+        self.rect = self.window.game_window.blit(self.coinimage,
+        (self.x_coordinate, self.y_coordinate))
 
 class Collector:
     """A class used to present the collector in the game.
     The collector is the character that player moves in the game.
     """
-    def __init__(self,x,y,window):
+    def __init__(self,x_coordinate,y_coordinate,window):
         """Constructor of the class, which handles the properties of the collector.
 
         Args:
@@ -39,16 +46,21 @@ class Collector:
                 window: Window-object. Window which the collector is part of.
         """
 
-        self.x = x
-        self.y = y
+        self.x_coordinate = x_coordinate
+        self.y_coordinate = y_coordinate
         self.width = 40
         self.height = 40
         self.speed = 5
-        self.collectorImg = pygame.image.load('src/collectinggame/images/coincollector.png')
+        self.collectorimage = pygame.image.load(
+            'src/collectinggame/images/coincollector.png')
         self.window = window
-        
+
     def draw(self):
-        self.rect = self.window.game_window.blit(self.collectorImg, (self.x, self.y))
+        """Draws the player controlled collector
+        """
+
+        self.rect = self.window.game_window.blit(self.collectorimage,
+        (self.x_coordinate, self.y_coordinate))
 
 class Window:
     """A class used to present the game window for the game.
@@ -84,7 +96,7 @@ def main_game():
     window = game_window.game_window
 
     # Refreshrate of the game
-    FPS = 60
+    refreshrate = 60
     clock = pygame.time.Clock()
 
     # The objects of the game
@@ -97,20 +109,20 @@ def main_game():
     font = pygame.font.Font('freesansbold.ttf', 26)
     score = 0
     scoretext = font.render('Score = ' + str(score), True, (255,255,255))
-    scoretextRect = scoretext.get_rect()  
-    scoretextRect.topleft = (20, 20)
+    scoretextrectangle = scoretext.get_rect()
+    scoretextrectangle.topleft = (20, 20)
 
     # The time left display
     time = pygame.time.get_ticks()/1000
     timetext = font.render('Time left = ' + str(time), True, (255,255,255))
-    timetextRect = timetext.get_rect()  
-    timetextRect.topleft = (20, 50)
+    timetextrectangle = timetext.get_rect()
+    timetextrectangle.topleft = (20, 50)
 
 
     # Main game loop
     runningisgame = True
-    while pygame.time.get_ticks() < 30000 and runningisgame == True:
-        clock.tick(FPS)
+    while pygame.time.get_ticks() < 30000 and runningisgame is True:
+        clock.tick(refreshrate)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 runningisgame = False
@@ -118,8 +130,8 @@ def main_game():
 
     # Fill the window, draw objects and texts
         window.fill((0,0,0))
-        window.blit(scoretext,scoretextRect)
-        window.blit(timetext,timetextRect)
+        window.blit(scoretext,scoretextrectangle)
+        window.blit(timetext,timetextrectangle)
 
         collector.draw()
         coin.draw()
@@ -127,19 +139,20 @@ def main_game():
     # Player movement
         keys = pygame.key.get_pressed()
 
-        if keys[pygame.K_LEFT] and collector.x > 0:
-            collector.x -= collector.speed
+        if keys[pygame.K_LEFT] and collector.x_coordinate > 0:
+            collector.x_coordinate -= collector.speed
 
-        if keys[pygame.K_RIGHT] and collector.x < game_width-40:
-            collector.x += collector.speed
+        if keys[pygame.K_RIGHT] and collector.x_coordinate < game_width-40:
+            collector.x_coordinate += collector.speed
 
-        if keys[pygame.K_DOWN] and collector.y < game_height-40:
-            collector.y += collector.speed
+        if keys[pygame.K_DOWN] and collector.y_coordinate < game_height-40:
+            collector.y_coordinate += collector.speed
 
-        if keys[pygame.K_UP] and collector.y > 0:
-            collector.y -= collector.speed
+        if keys[pygame.K_UP] and collector.y_coordinate > 0:
+            collector.y_coordinate -= collector.speed
 
-    # Player collects a coin, get a score, score display updates and the coin gets moved to random location
+    # Player collects a coin, get a score,
+    # score display updates and the coin gets moved to random location
         if collector.rect.colliderect(coin.rect):
             score += 1
             collector.speed+=0.5
@@ -147,17 +160,17 @@ def main_game():
             coin = Coin(randint(20, game_width-20), randint(20, game_height-20), game_window)
 
             scoretext = font.render('Score = ' + str(score), True, (255,255,255))
-            scoretextRect = scoretext.get_rect()  
-            scoretextRect.topleft = (20, 20)    
+            scoretextrectangle = scoretext.get_rect()
+            scoretextrectangle.topleft = (20, 20)
 
     # Time left display updates
         time = int(30-pygame.time.get_ticks()/1000)
         timetext = font.render('Time left = ' + str(time), True, (255,255,255))
-        timetextRect = timetext.get_rect()  
-        timetextRect.topleft = (20, 50)
+        timetextrectangle = timetext.get_rect()
+        timetextrectangle.topleft = (20, 50)
 
         pygame.display.update()
 
-    # Window closes and returns the score    
+    # Window closes and returns the score
     pygame.quit()
     return score
