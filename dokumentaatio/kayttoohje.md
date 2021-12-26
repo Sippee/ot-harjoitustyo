@@ -22,13 +22,38 @@ Nyt ohjelman voi käynnistää komennolla:
 poetry run invoke start
 ```
 
-## Kirjautuminen ja rekisteröinti
+## Kirjautuminen
 
-Sovellus käynnistyy terminaaliin, josta valitaan mitä haluaa tehdä.
+Sovellus käynnistyy kirjautumisnäkymään:
 
-Voi valita haluaako rekisteröidä uuden tunnuksen vai kirjautua sisään.
+![](./kuvat/kayttoohje-loginscreen.png)
 
+Kirjautuminen onnistuu kirjoittamalla olemassaoleva käyttäjätunnus sekä syötekenttään ja painamalla "Login"-painiketta.
 
-## Kirjautumisen jälkee voi aloittaa pelin tai kirjautua ulos
+## Uuden käyttäjän luominen
 
-Terminaalissa on ohje, miten aloittaa peli tai kirjautua ulos, kun on kirjautunut sisälle tai rekisteröitynyt uuden tunnuksen.
+Kirjautumisnäkymästä on mahdollista siirtyä uuden käyttäjän luomisnäkymään panikkeella "Create user".
+
+Uusi käyttäjä luodaan syöttämällä tiedot syötekenttiin ja painamalla "Create"-painiketta:
+
+![](./kuvat/kayttoohje-registerscreen.png)
+
+## Kirjautumisen jälkeen
+
+Onnistuneen kirjautumisen myötä päästään näkemään kymmenen parhaan pisteet tai aloittamaan uusi peli.
+
+![](./kuvat/kayttoohje-loggedinscreen.png)
+
+Tulostaulu näyttää 10 parhaiden pisteiden saaneet, joilla on enemmän kuin 0 pistettä.
+
+Klikkaamalla "Logout" käyttäjä kirjautuu ulos takaisin kirjautumisnäkymään. Klikkaamalla "Play" käyttäjä aloittaa uuden pelin.
+
+## Peli
+
+Pelin aloittaessa aika alkaa kulumaan, ja käyttäjän on tarkoitus liikuttaa hahmoa ja kerätä mahdollisimman monta kolikkoa 30 sekuntissa.
+
+![](./kuvat/kayttoohje-game.png)
+
+Hahmo saa hieman lisää vauhtia jokaisen kerätyn kolikon jälkeen.
+
+Pelin päätyttyä tulostaulu päivittyy.
